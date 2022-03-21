@@ -8,24 +8,23 @@ int input()
 } 
 int find_fibo(int n)
 {
-  int a=0,b=1,sum;
-  if(n>0)
-  {
-    sum=a+b;
-    a=b;
-    b=sum;
-    printf("%d",sum);
-    find_fibo(n-1);
+  
+  int fibo=0;
+  int a=0;
+  int b=1;
+  for(int i=0;i<n;i++)
+    {
+      fibo=a;
+      a=b;
+      b=fibo+b;
+    
 
   }
-  
+  return fibo;
 }
 void output(int n,int fibo)
 {
-  int a,b;
-printf("fibo series:");
-  printf("%d %d",0,1);
-  find_fibo(n-2);
+  printf("the %dth fibonacci no is %d/n",n,fibo);
 }
 int main()
 {

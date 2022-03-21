@@ -8,39 +8,37 @@ int input_array_size()
 }
 void init_array(int n,int a[n])
 {
+  
   for(int i=0;i<n;i++)
-    a[i]=1;
-  a[0]=0;
-  a[1]=0;
+    a[i]=i;
+    a[1]=0;
 }
-void erotosthenesieve(int n,int a[n]) 
+void erotosthenes_sieve(int n,int a[n]) 
 
 {
-  int i=2;
+  int i=0;
   while(i<sqrt(n))
-    {
-      while(a[i]==0) i++;
-      for(int k=i+1; i<n;k==i)
-        a[k]=0;
-    }
-}
-void display(int n,int a[n])
-{
-  for(int i=0;i<n;i++)
-    {
-      if(a[i] !=0)
-        printf("%d",a[i]);
-    }
+  {
+    for()
+  }
 
-printf("\n");
-  } 
+  void out_put(int n,int a[n])
+  {
+    int i;
+    printf("prime no are:/n");
+    for(i=1;i<n;i++)
+    printf("%d",a[i]);
+  }
+
+
+   
 int main()
 {
   int n;
   n=input_array_size();
   int a[n];
-  init_array(a[n]);
-    erotosthenes_sieve(n,a[n]);
-      output(n,a[n]);
+  init_array(n,&a[n]);
+    erotosthenes_sieve(n,&a[n]);
+     out_put(n,&a[n]);
         return 0;
 }

@@ -1,1 +1,5 @@
-
+ gcc -g p4final.c
+ ./a.out
+enter the num  of elements
+4
+the 4th fibonacci no is 2/n
