@@ -1,1 +1,5 @@
-
+gcc -g p5final.c
+ ./a.out
+enter the size of array:
+5
+prime no are:/n12305
