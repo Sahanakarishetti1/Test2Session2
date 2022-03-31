@@ -8,16 +8,22 @@ int input()
 } 
 int find_fibo(int n)
 {
-  int t1=0,t2=1;
-  int next_term=t2;
-  {
-    for(int i=0;i<=n;i++)
-    
-  }
-
   
-  return next_term;
+  int a=0;
+  int b=1;
+  int fibo=a+b;
+  
+
+  while (fibo<= n) {
+    printf("%d, ", fibo);
+    a= b;
+    b = fibo;
+    fibo= a+ b;
   }
+  }
+  
+  
+
 void output(int n,int fibo)
 {
   printf("the %dth fibonacci no is %d/n",n,fibo);
