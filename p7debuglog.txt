@@ -1,1 +1,9 @@
-
+ gcc -g p7final.c -lm
+ ./a.out
+enter the values of x,y
+2
+3
+enter the values of x,y
+2
+4
+the distance is 1.000000 
