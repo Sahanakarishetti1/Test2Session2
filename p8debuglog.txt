@@ -1,1 +1,24 @@
+ gcc -g p8final.c -lm
+ ./a.out
+enter the number of sides of polygon
+3
+enter the points p1
+2
+3
+enter the points p2
+2
+4
+enter the points p1
+2
+5
+enter the points p2
+2
+3
+enter the points p1
+2
+4
+enter the points p2
 
+2
+5
+the perimeter of polygon is as follows 4.000000

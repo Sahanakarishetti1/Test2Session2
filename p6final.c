@@ -1,36 +1,49 @@
 #include<stdio.h>
-int string_length(char *a)
+#include<string.h>
+int input_string(char *a,char *b)
 {
-  int i;
-  for(i=0;a[i]!='\0';i++);
-  return i;
+  printf("enter the string\n");
+  scanf("%s",a);
+  printf("enter the substring\n");
+  scanf("%s",b);
+  
   
 }
-int string_ncmp(char *a1,char *a2)
+int str_substr(char *string,char *substring)
 { 
-  int i,n;
-  for(int i=0;i<n && a1[i]== a2[i] && a1[i]!='\0';i++);
-  return a1[i]- a2[i];
-  
-}
-int string_index(char *a,char *subs)
-{
-  int l1=string_length(a);
-  int l2=string_length(subs);
-  if (l1 < 12)
-    return -1;
-  for(int i=0;i<11-12;i++)
-    if(string_ncmp(a,subs))
-      return i;
+   int i,k,n,b;
+  for (i=0;i<=strlen(string)-strlen(substring)&& k!=strlen(substring);i++)
+    {
+      b=i;
+      for(k=0;substring[k]!='\0';)
+      {
+        if(string[b]==substring[k]){
+          b++;
+          k++;
+          n=i;
+        }
+        else{
+          break;
+        }
+      }
+    }
+  return n;
+
      
+}
+void output(char *string,char *substring,int index)
+{
+  printf("the substring %s of string %s is %d",string,substring,index);
 }
 int main()
 {
-  char *a,*subs;
-  string_length( a);
- int  strng_ncmp();
-  string_index(a,subs);
+  int index;
+  char a[20],b[20];
+  input_string(a,b);
+  index=str_substr(a,b);
+  output(a,b,index);
   return 0;
+  }
   
   
-}
+  
