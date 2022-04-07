@@ -2,7 +2,7 @@
 int input()
 {
   int n;
-  printf("enter the num  of elements\n");
+  printf("enter the num  \n");
   scanf("%d",&n);
   return n;
 } 
@@ -15,7 +15,7 @@ int find_fibo(int n)
   
 
   while (fibo<= n) {
-    printf("%d, ", fibo);
+    
     a= b;
     b = fibo;
     fibo= a+ b;

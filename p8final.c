@@ -29,7 +29,8 @@ int input_n()
 Line input_line()
 {
   Point p1,p2;
-  Line l1;
+ Line l1;
+  
   printf("enter the points p1\n");
   scanf("%f%f",&p1.x,&p1.y);
   printf("enter the points p2\n");
@@ -37,7 +38,8 @@ Line input_line()
   l1.p1=p1;
   l1.p2=p2;
   l1.distance=sqrt(pow(p2.x-p1.x,2)+pow(p2.y-p1.y,2));
-  return l1;
+  
+  return l1; 
   
 }
 void input_n_lines(int n,Line l[n])
@@ -66,22 +68,16 @@ void output(Polygon *p)
 {
   printf("the perimeter of polygon is as follows %f\n",p->perimeter);
 }
-void its_no_polygon()
-{
-  printf("for the value of n entered there is no polygon formation\n");
-}
+
 int main()
 {
+  
   Polygon p;
   int n=input_n();
-  if(n<=2)
-  {
-    its_no_polygon();
+  
     
-  }
-  else{
     input_polygon(n,&p);
     find_perimeter(n,&p);
     output(&p);
-  }
+  
 }

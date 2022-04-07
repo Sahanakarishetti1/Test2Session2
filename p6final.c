@@ -11,8 +11,8 @@ int input_string(char *a,char *b)
 }
 int str_substr(char *string,char *substring)
 { 
-   int i,k,n,b;
-  for (i=0;i<=strlen(string)-strlen(substring)&& k!=strlen(substring);i++)
+   int k,n,b;
+  for ( int i=0;i<=strlen(string)-strlen(substring)&& k!=strlen(substring);i++)
     {
       b=i;
       for(k=0;substring[k]!='\0';)
