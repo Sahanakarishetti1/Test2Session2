@@ -9,8 +9,8 @@ int input()
 int find_fibo(int n)
 {
   
-  int a=0;
-  int b=1;
+  int a=1;
+  int b=0;
   int fibo=a+b;
   
 
